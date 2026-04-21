@@ -18,9 +18,8 @@ data:text/html;charset=utf-8,
 <body>
   <div id="app"></div>
   <script type="module">
-    // 注意：发布到 npm 后使用 https://esm.sh/mygen-meditor
-    // 开发时使用本地构建或 CDN 测试
-    import { MermaidEditor } from 'https://esm.sh/mygen-meditor';
+    // 从 GitHub 加载
+    import { MermaidEditor } from 'https://esm.sh/gh/myg133/mygen-meditor@main';
     
     const editor = new MermaidEditor({
       container: document.getElementById('app'),
